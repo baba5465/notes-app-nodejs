@@ -1,0 +1,23 @@
+{
+  "name": "notes-app-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baba5465/notes-app-nodejs.git"
+  },
+  "author": "Baba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baba5465/notes-app-nodejs/issues"
+  },
+  "homepage": "https://github.com/baba5465/notes-app-nodejs#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "yargs": "^15.3.1"
+  }
+}
