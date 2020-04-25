@@ -8,9 +8,17 @@ const argv = yargs.argv;
 var command = process.argv[2];
 
 if (command === 'add') {
-  notes.addNote (argv.title, argv.body);
+  var note = notes.addNote (argv.title, argv.body);
+  if (_.isUndefined (note)) {
+    console.log ('Already exists');
+  } else {
+    console.log ('Note added');
+  }
 } else if (command === 'list') {
 } else if (command === 'remove') {
+  var noteRemoved = notes.removeNote (title);
+  var message = noteRemoved ? 'Note removed' : 'Note does not exists';
+  console.log (message);
 } else if (command === 'read') {
 } else {
   console.log ('Command not found');
