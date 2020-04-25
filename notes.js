@@ -38,7 +38,11 @@ var removeNote = title => {
   return notes.length !== filteredNotes.length;
 };
 
-var getNote = title => {};
+var getNote = title => {
+  var notes = fetchNotes ();
+  var filteredNotes = notes.filter (note => note.title === title);
+  return filteredNotes[0];
+};
 
 module.exports = {
   addNote,
